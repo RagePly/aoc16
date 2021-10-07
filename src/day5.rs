@@ -1,13 +1,10 @@
-use std::fs;
 use md5::compute;
 
 #[allow(dead_code)]
 const FILENAME: &str = "data/day5.txt";
 
 #[allow(dead_code)]
-pub fn part1() -> (String, u128) {
-    let source = fs::read_to_string(FILENAME).unwrap();
-    let now = std::time::Instant::now();
+pub fn part1(source: String) -> String {
     let mut i: i64 = 0;
     let mut password: Vec<u8> = Vec::new();
     while password.len() < 8 {
@@ -21,13 +18,11 @@ pub fn part1() -> (String, u128) {
         }
         i += 1;
     } 
-    (String::from_utf8(password).unwrap(), now.elapsed().as_micros())
+    String::from_utf8(password).unwrap()
 }
 
 #[allow(dead_code)]
-pub fn part2() -> (String, u128) {
-    let source = fs::read_to_string(FILENAME).unwrap();
-    let now = std::time::Instant::now();
+pub fn part2(source: String) -> String {
     let mut i: i64 = 0;
     let mut flag: u8 = 0;
     let mut password: [u8; 8] = [0,0,0,0,0,0,0,0];
@@ -47,6 +42,6 @@ pub fn part2() -> (String, u128) {
         }
         i += 1;
     } 
-    (String::from_utf8(Vec::from(password)).unwrap(), now.elapsed().as_micros())
+    String::from_utf8(Vec::from(password)).unwrap()
 }
 
