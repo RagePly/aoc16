@@ -12,6 +12,13 @@ mod day11;
 mod day12;
 mod day13;
 mod day14;
+mod day15;
+mod day16;
+mod day17;
+mod day18;
+mod day19;
+mod day20;
+mod day21;
 
 enum TaskRunType {
     RunAllow,
@@ -73,6 +80,19 @@ fn main() {
     run_task!(day13::part1, "data/day13.txt", RunAllow);
     run_task!(day13::part2, "data/day13.txt", RunAllow);
     run_task!(day14::part1, "data/day14.txt", RunAllow);
-    run_task!(day14::part2, "data/day14.txt", RunAllow);
-
+    run_task!(day14::part2, "data/day14.txt", RunRestrict("19968", 51634545));
+    run_task!(day15::part1, "data/day15.txt", RunAllow);
+    run_task!(day15::part2, "data/day15.txt", RunAllow);
+    run_task!(day16::part1, "data/day16.txt", RunAllow);
+    run_task!(day16::part2, "data/day16.txt", RunRestrict("01010001101011001", 187259));
+    run_task!(day17::part1, "data/day17.txt", RunAllow);
+    run_task!(day17::part2, "data/day17.txt", RunAllow);
+    run_task!(day18::part1, "data/day18.txt", RunAllow);
+    run_task!(day18::part2, "data/day18.txt", RunRestrict("20000795", 415684));
+    run_task!(day19::part1, "data/day19.txt", RunAllow);
+    run_task!(day19::part2, "data/day19.txt", RunAllow);
+    run_task!(day20::part1, "data/day20.txt", RunAllow);
+    run_task!(day20::part2, "data/day20.txt", RunAllow);
+    run_task!(day21::part1, "data/day21.txt", RunAllow);
+    run_task!(day21::part2, "data/day21.txt", RunAllow);
 }
