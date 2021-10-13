@@ -20,6 +20,9 @@ mod day19;
 mod day20;
 mod day21;
 mod day22;
+mod day23;
+mod day24;
+mod day25;
 
 enum TaskRunType {
     RunAllow,
@@ -97,5 +100,10 @@ fn main() {
     run_task!(day21::part1, "data/day21.txt", RunAllow);
     run_task!(day21::part2, "data/day21.txt", RunAllow);
     run_task!(day22::part1, "data/day22.txt", RunAllow);
-    run_task!(day22::part2, "data/day22.txt", RunAllow);
+    run_task!(day23::part1, "data/day23.txt", RunAllow);
+    run_task!(day23::part2, "data/day23.txt", RunRestrict("479009308", 31364285));
+    run_task!(day24::part1, "data/day24.txt", RunRestrict("490", 1189579));
+    run_task!(day24::part2, "data/day24.txt", RunRestrict("744", 1225393));
+    run_task!(day25::part1, "data/day25.txt", RunAllow);
+    run_task!(day25::part2, "data/day25.txt", RunAllow);
 }
