@@ -19,6 +19,7 @@ mod day18;
 mod day19;
 mod day20;
 mod day21;
+mod day22;
 
 enum TaskRunType {
     RunAllow,
@@ -95,4 +96,6 @@ fn main() {
     run_task!(day20::part2, "data/day20.txt", RunAllow);
     run_task!(day21::part1, "data/day21.txt", RunAllow);
     run_task!(day21::part2, "data/day21.txt", RunAllow);
+    run_task!(day22::part1, "data/day22.txt", RunAllow);
+    run_task!(day22::part2, "data/day22.txt", RunAllow);
 }
