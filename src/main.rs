@@ -100,6 +100,7 @@ fn main() {
     run_task!(day21::part1, "data/day21.txt", RunAllow);
     run_task!(day21::part2, "data/day21.txt", RunAllow);
     run_task!(day22::part1, "data/day22.txt", RunAllow);
+    run_task!(day22::part2, "data/day22.txt", RunAllow);
     run_task!(day23::part1, "data/day23.txt", RunAllow);
     run_task!(day23::part2, "data/day23.txt", RunRestrict("479009308", 31364285));
     run_task!(day24::part1, "data/day24.txt", RunRestrict("490", 1189579));

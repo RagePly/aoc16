@@ -218,6 +218,6 @@ pub fn part1(source: String) -> i32 {
     -1
 }
 
-pub fn part2(_source: String) -> i32 {
-    0
+pub fn part2(_source: String) -> String {
+    String::from("Merry Christmas!")
 }
