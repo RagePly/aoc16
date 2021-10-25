@@ -18,10 +18,10 @@ pub fn part1(source: String) -> u32 {
     0
 }
 
-pub fn part2(source: String) -> u64 { // solution only worked while having u64 since u32 would overflow
+pub fn part2(source: String) -> i128 { // solution only worked while having i128 since u32 would overflow and u64 would overflow in debug
     let mut ip_ranges: Vec<_> = source.split("\r\n").map(
         |line| {
-            let mut rs = line.split("-").map(|v| v.parse::<u64>().unwrap());
+            let mut rs = line.split("-").map(|v| v.parse::<i128>().unwrap());
             (rs.next().unwrap(), rs.next().unwrap())
         }
     ).collect();
